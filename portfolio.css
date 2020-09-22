@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Solway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bitter&display=swap");
+
+body {
+  position: absolute;
+  margin: 0px;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  opacity: 1;
+}
+
+#body {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  font-size: 50px;
+  color: blanchedalmond;
+  font-family: Bitter;
+  text-align: left;
+}
+
+#topbar {
+  position: fixed;
+  top:40px ;
+  height: 200px;
+  color: white;
+  font-size: 30px;
+  left: 70px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: (7,1fr);
+  grid-template-areas: "a b b b b b c";
+}
+
+#heading {
+  grid-area: a;
+  font-size: 30px;
+}
+
+#navbar { 
+ grid-area: c;
+ font-size: 25px;
+}
+
+#navbar a:hover {
+  color: gray;
+  /* text-decoration-line: underline;
+  text-decoration-color: gray;
+  text-decoration-thickness: 2px; */
+}
+
+#home {
+  padding-top: 150px;
+  height: 100%; 
+  color: white;
+  left: 40px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: (5,1fr);
+  grid-template-areas: "a b c d d";
+}
+
+#intro {
+  font-size: 100px;
+  grid-area: b;
+  margin-top: 150px;
+}
+
+#descrip {
+  font-size: 50px;
+  color: gray;
+}
+
+#profile-picture {
+  grid-area: c;
+}
+
+#profilePicture {
+  height: 600px;
+  width: 500px;
+}
+
+#sideNav {
+  grid-area: d;
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  background-color:black;
+  color: white;
+  text-decoration: solid;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: start;
+  opacity: 0.8;
+}
+
+.link {
+  color: white;
+  text-decoration: solid;
+  /* padding-inline-start: 25px; */
+  padding-inline-end: 25px;
+}
+
+#sideNav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+}
+
+#sideNav a:hover {
+  background-color: wheat;
+  color: black;
+  font-size: 30px;
+}
+
+#sideNav .closebtn {
+  color: white;
+  position: absolute;
+  top: 0;
+  font-size: 36px;
+  align-self: flex-end;
+}
+
+@media screen and (max-height: 450px) {
+  #sideNav {
+    padding-top: 15px !important;
+  }
+  #sideNav a {
+    font-size: 18px !important;
+  }
+}
+
+/* Page content. The value of the margin-left property should match the value of the sideNav's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sideNav into a topbar */
+@media only screen and (max-width: 700px) {
+  #intro-sub-container {
+    align-self: center;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+  #profile-picture {
+    align-self: center !important;
+    padding-left: 10px;
+  }
+  #profilePicture {
+    height: 700px !important;
+    width: 300px !important;
+    border-radius: 10px !important;
+  }
+  #sideNavOpen {
+    display: none !important;
+  }
+  .closebtn {
+    display: none !important;
+  }
+  .container {
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-areas: "g g h" !important; 
+    justify-content: center;
+  }
+  .personal-details {
+    padding-left: 10px;
+    text-align: center;
+    align-self: center;
+    grid-area: g !important;
+  }
+  .skills {
+    padding-left: 10px;
+    text-align: center;
+    align-self: center;
+    grid-area: g !important;
+  }
+  .about-me {
+    padding-left: 10px;
+    text-align: center;
+    align-self: center;
+    grid-area: g !important;
+  }
+  #intro-box {
+    grid-area: h !important;
+  }
+  #sideNav {
+    top: 0;
+    background-color: black;
+    flex-direction: row !important;
+    position: fixed;
+    width: 100% !important;
+    height: auto !important;
+  }
+  #sideNav a {
+    float: left !important;
+  }
+  div.content {
+    margin-left: 0 !important;
+  }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  #sideNav a {
+    text-align: center !important;
+    float: none !important;
+  }
+}
+
+#sideNavOpen {
+  position: fixed;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.container {
+  height: 600px;
+  width: auto;
+  padding-top: 20px;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "d f e e e";
+  align-items: start;
+}
+
+.personal-details {
+  grid-area: e;
+  font-size: 30px;
+  font-family: Satisfy;
+}
+.skills {
+  grid-area: e;
+  font-size: 30px;
+  font-family: Satisfy;
+}
+.about-me {
+  grid-area: e;
+  font-size: 30px;
+  font-family: Satisfy;
+}
+
+#intro-container {
+  color: white;
+  font-family: Bitter;
+  font-size: 50px;
+  top: 0;
+  height: 700px;
+}
+
+#intro-sub-container {
+  top: 0;
+  padding-left: 50px;
+  display: grid;
+  grid-template-columns: (4,1fr) ;
+  grid-template-areas: "a b b c";
+  grid-gap: 10px;
+}
+
+#extra {
+  grid-area: a;
+  align-self: center;
+}
+
+#name {
+  grid-area: b;
+  align-self: center;
+}
+
+#intro-box {
+  position: fixed;
+  right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  grid-area: f;
+  visibility: hidden;
+}
+
+#picture-small {
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+}
+
+#name-small {
+  font-family: Solway;
+  font-size: 30px;
+  color: white;
+}
+
+.block {
+  height: 5em;
+  line-height: 5em;
+  width: 10em;
+  color: #fdfdfd;
+  text-align: center;
+  margin: 1em auto;
+  text-shadow: 0 0 1px #333; /* so one can see fadeBgColor properly */
+}
+
+.animatable {
+  /* initially hide animatable objects */
+  visibility: hidden;
+
+  /* initially pause animatable objects their animations */
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+/* show objects being animated */
+.animated {
+  visibility: visible;
+
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+}
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
