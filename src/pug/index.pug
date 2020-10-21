@@ -38,6 +38,8 @@ html(lang='en')
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#projects') Projects
                         li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#timeline') Timeline
+                        li.nav-item
                             a.nav-link.js-scroll-trigger(href='#signup') Contact
 
         // Masthead
@@ -50,8 +52,139 @@ html(lang='en')
                     h2.text-white-50.mt-2.mb-5 Welcome to my Portfolio.
                     a.btn.btn-primary.js-scroll-trigger(href='#about') Get Started
 
-        // About
-        section#about.page-section
+        //- // About
+        //- section#about.about-section.text-center.bg-light
+        //-     .container
+        //-         .col.justify-content-center
+        //-             .row
+        //-                 .col-lg-6
+        //-                     .text-center.h-100.project
+        //-                         .d-flex.h-100
+        //-                             .bg-primary.project-text.w-100.my-auto.text-center.text-lg-left
+        //-                                 h4.text-white Education
+        //-                                 p.mb-0.text-white-50
+        //-                                     | An example of where you can put an image of a project, or anything else, along with a description.
+        //-                                 hr.d-none.d-lg-block.mb-0.ml-0
+        //-             .row
+        //-                 .col-lg-6
+        //-                     .text-center.h-100.project
+        //-                         .d-flex.h-100
+        //-                             .bg-primary.project-text.w-100.my-auto.text-center.text-lg-left
+        //-                                 h4.text-white Experience
+        //-                                 p.mb-0.text-white-50
+        //-                                     | An example of where you can put an image of a project, or anything else, along with a description.
+        //-                                 hr.d-none.d-lg-block.mb-0.ml-0
+
+
+        // Projects
+        section#projects.projects-section.bg-primary
+            .container
+                // Featured Project Row
+                .row.align-items-center.no-gutters.mb-4.mb-lg-5
+                    .col-xl-8.col-lg-7
+                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/bg-masthead.jpg', alt='')
+                    .col-xl-4.col-lg-5
+                        .featured-text.text-center.text-lg-left
+                            h4 Shoreline
+                            p.text-black-50.mb-0
+                                | Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!
+                // Project One Row
+                .row.justify-content-center.no-gutters.mb-5.mb-lg-0
+                    .col-lg-6
+                        img.img-fluid(src='assets/img/demo-image-01.jpg', alt='')
+                    .col-lg-6
+                        .bg-black.text-center.h-100.project
+                            .d-flex.h-100
+                                .project-text.w-100.my-auto.text-center.text-lg-left
+                                    h4.text-white Misty
+                                    p.mb-0.text-white-50
+                                        | An example of where you can put an image of a project, or anything else, along with a description.
+                                    hr.d-none.d-lg-block.mb-0.ml-0
+                // Project Two Row
+                .row.justify-content-center.no-gutters
+                    .col-lg-6
+                        img.img-fluid(src='assets/img/demo-image-02.jpg', alt='')
+                    .col-lg-6.order-lg-first
+                        .bg-black.text-center.h-100.project
+                            .d-flex.h-100
+                                .project-text.w-100.my-auto.text-center.text-lg-right
+                                    h4.text-white Mountains
+                                    p.mb-0.text-white-50
+                                        | Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!
+                                    hr.d-none.d-lg-block.mb-0.mr-0
+
+        // Portfolio Grid
+        section#portfolio.page-section.bg-light
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Portfolio
+                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+                .row
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal1')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/01-thumbnail.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Threads
+                                .portfolio-caption-subheading.text-muted Illustration
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal2')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/02-thumbnail.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Explore
+                                .portfolio-caption-subheading.text-muted Graphic Design
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal3')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/03-thumbnail.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Finish
+                                .portfolio-caption-subheading.text-muted Identity
+                    .col-lg-4.col-sm-6.mb-4.mb-lg-0
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal4')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/04-thumbnail.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Lines
+                                .portfolio-caption-subheading.text-muted Branding
+                    .col-lg-4.col-sm-6.mb-4.mb-sm-0
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal5')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/05-thumbnail.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Southwest
+                                .portfolio-caption-subheading.text-muted Website Design
+                    .col-lg-4.col-sm-6
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal6')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/06-thumbnail.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Window
+                                .portfolio-caption-subheading.text-muted Photography
+
+
+
+        // Timeline
+        section#timeline.page-section.bg-light
             .container
                 .text-center
                 ul.timeline
@@ -245,44 +378,6 @@ html(lang='en')
         //-                         .portfolio-caption-heading Window
         //-                         .portfolio-caption-subheading.text-muted Photography
 
-        // Projects
-        section#projects.projects-section.bg-light
-            .container
-                // Featured Project Row
-                .row.align-items-center.no-gutters.mb-4.mb-lg-5
-                    .col-xl-8.col-lg-7
-                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/bg-masthead.jpg', alt='')
-                    .col-xl-4.col-lg-5
-                        .featured-text.text-center.text-lg-left
-                            h4 Shoreline
-                            p.text-black-50.mb-0
-                                | Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!
-                // Project One Row
-                .row.justify-content-center.no-gutters.mb-5.mb-lg-0
-                    .col-lg-6
-                        img.img-fluid(src='assets/img/demo-image-01.jpg', alt='')
-                    .col-lg-6
-                        .bg-black.text-center.h-100.project
-                            .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-white Misty
-                                    p.mb-0.text-white-50
-                                        | An example of where you can put an image of a project, or anything else, along with a description.
-                                    hr.d-none.d-lg-block.mb-0.ml-0
-                // Project Two Row
-                .row.justify-content-center.no-gutters
-                    .col-lg-6
-                        img.img-fluid(src='assets/img/demo-image-02.jpg', alt='')
-                    .col-lg-6.order-lg-first
-                        .bg-black.text-center.h-100.project
-                            .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-right
-                                    h4.text-white Mountains
-                                    p.mb-0.text-white-50
-                                        | Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!
-                                    hr.d-none.d-lg-block.mb-0.mr-0
-
-
         //- // Signup
         //- section#signup.signup-section
         //-     .container
@@ -317,10 +412,11 @@ html(lang='en')
                     .col-md-4.mb-3.mb-md-0
                         .card.py-4.h-100
                             .card-body.text-center
-                                i.fas.fa-mobile-alt.text-primary.mb-2
+                                i.fa.fa-file.text-primary.mb-2
                                 h4.text-uppercase.m-0 Resume
                                 hr.my-4
-                                .small.text-black-50 +1 (555) 902-8832
+                                .small.text-black-50
+                                    a(href='assets/docs/resume.pdf') Resume
                 .social.d-flex.justify-content-center
                     a.mx-2(href='#!')
                         i.fab.fa-twitter
