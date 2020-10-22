@@ -1,5 +1,11 @@
 .projects-section {
     padding: 10rem 0;
+    background: linear-gradient(
+            to bottom,
+            $black 0%,
+            #{fade-out($black, 0.1)} 75%,
+            #{fade-out($black, 0.2)} 100%
+        );
     .featured-text {
         padding: 2rem;
         @include media-breakpoint-up(lg) {

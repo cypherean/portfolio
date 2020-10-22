@@ -1,6 +1,13 @@
 // Styling for the portfolio section
 #portfolio {
-    margin-top: 20rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: linear-gradient(
+        to bottom,
+        $black 0%,
+        #{fade-out($black, 0.1)} 75%,
+        #{fade-out($black, 0.2)} 100%
+    );
     .portfolio-item {
         max-width: 25rem;
         margin-left: auto;
@@ -42,7 +49,25 @@
             }
             .portfolio-caption-subheading {
                 font-style: italic;
-                font-family: $subheadings-font-family;
+            }
+        }
+    }
+    .featured-text {
+        padding: 2rem;
+        @include media-breakpoint-up(lg) {
+            padding: 0 0 0 2rem;
+            border-left: 0.5rem solid $primary;
+        }
+    }
+    .project-text {
+        padding: 3rem;
+        font-size: 90%;
+        @include media-breakpoint-up(lg) {
+            padding: 5rem;
+            hr {
+                border-color: $primary;
+                border-width: 0.25rem;
+                width: 30%;
             }
         }
     }
@@ -64,7 +89,6 @@
         p.item-intro {
             font-style: italic;
             margin-bottom: 2rem;
-            font-family: $subheadings-font-family;
         }
         p {
             margin-bottom: 2rem;
