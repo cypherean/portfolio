@@ -85,55 +85,125 @@ html(lang='en')
         // Projects
         section#projects.projects-section
             .container
-                .row
-                    .col-lg-6.col-sm-6
-                        .bg-light.text-center.project
-                            .d-flex
-                                .project-text.text-center.text-lg-right
-                                    h4.text-black 1
-                                    p.mb-0.text-black-50
-                                        | An example of where you can put an image of a project, or anything else, along with a description.
-                                    hr.d-none.d-lg-block.mb-0.mr-0
-                    .col-lg-6.col-sm-6
-                        .bg-light.text-center.h-100.project
-                            .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-black 2
-                                    p.mb-0.text-black-50
-                                        | An example of where you can put an image of a project, or anything else, along with a description.
-                                    hr.d-none.d-lg-block.mb-0.ml-0
-                    .col-lg-6.col-sm-6
-                        .bg-light.text-center.h-100.project
-                            .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-black 3
-                                    p.mb-0.text-black-50
-                                        | An example of where you can put an image of a project, or anything else, along with a description.
-                                    hr.d-none.d-lg-block.mb-0.ml-0
-                    .col-lg-6.col-sm-6
-                        .bg-light.text-center.h-100.project
-                            .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-right
-                                    h4.text-black 4
-                                    p.mb-0.text-black-50
-                                        | Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!
-                                    hr.d-none.d-lg-block.mb-0.mr-0
-                    .col-lg-6.col-sm-6
-                        .bg-light.text-center.h-100.project
-                            .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-right
-                                    h4.text-black 5
-                                    p.mb-0.text-black-50
-                                        | An example of where you can put an image of a project, or anything else, along with a description.
-                                    hr.d-none.d-lg-block.mb-0.mr-0
-                    .col-lg-6.col-sm-6
-                        .bg-light.text-center.h-100.project
-                            .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-black 6
-                                    p.mb-0.text-black-50
-                                        | An example of where you can put an image of a project, or anything else, along with a description.
-                                    hr.d-none.d-lg-block.mb-0.ml-0
+                .col.justify-content-center
+                    // Project One Row
+                    .row.justify-content-center
+                        .col-lg-8
+                            .bg-white.text-center.project
+                                    .project-text.w-100.my-auto.text-center.text-lg-left
+                                        h3.text-black
+                                            a(href='https://github.com/shreyaa-sharmaa/ikai') Ikai
+                                        h5.text-black File Scanning, Editing and Sharing App
+                                        h5.text-black
+                                            b  | React-native, Django
+                                        p.mb-0.text-black-50
+                                            | • Ikai can scan, edit multimedia, share in both online and offline
+                                            | mode and has the chat feature to facilitate smooth remote collaboration.
+                                            br
+                                            | • Implemented offline file sharing using TCP and rn-fetch-blob.
+                                        hr.d-none.d-lg-block.mb-0.ml-0
+                        .col-lg-8.order-lg
+                            .bg-white.text-center.project
+                                    .project-text.w-100.my-auto.text-center.text-lg-right
+                                        h3.text-black
+                                            a(href='https://github.com/shreyaa-sharmaa/rassasy') Rassasy
+                                        h5.text-black Canteen Pre-ordering System
+                                        h5.text-black
+                                            b  | HTML, CSS, Javascript, PHP, SQL
+                                        p.mb-0.text-black-50.order-rg
+                                            | • Spearheaded the development of a pre-ordering system in campus canteens for Winter of Code 2019.
+                                            br
+                                            | • Students order in advance and the canteen manager updates their order
+                                            | statuses. The order and order status are dynamically rendered.
+                                        hr.d-none.d-lg-block.mb-0.mr-0
+                        .col-lg-8
+                            .bg-white.text-center.h-100.project
+                                .d-flex.h-100
+                                    .project-text.w-100.my-auto.text-center.text-lg-left
+                                        h3.text-black
+                                            a(href='https://github.com/sdslabs/kiwi') Kiwi
+                                        h5.text-black Key-Value Store
+                                        h5.text-black
+                                            b  | Go
+                                        p.mb-0.text-black-50
+                                            | • Kiwi is a minimalistic in-memory key-value store written in Go.
+                                            br
+                                            | • Implemented function to add JSON support for storing the values in JSON
+                                            | format and using them in GoLang format from a stored file.
+                                        hr.d-none.d-lg-block.mb-0.ml-0
+                        .col-lg-8.order-lg
+                            .bg-white.text-center.h-100.project
+                                .d-flex.h-100
+                                    .project-text.w-100.my-auto.text-center.text-lg-right
+                                        h3.text-primary Cerebro
+                                        h5.text-black Machine Learning Competitions' Platform
+                                        h5.text-black
+                                            b  | React
+                                        p.mb-0.text-black-50
+                                            | • Cerebro is a platform for predictive modeling and analytics competitions
+                                            | for the campus.
+                                            br
+                                            | • Implemented lazy loading in the website using React.  
+                                        hr.d-none.d-lg-block.mb-0.mr-0
+                        .col-lg-8
+                            .bg-white.text-center.h-100.project
+                                .d-flex.h-100
+                                    .project-text.w-100.my-auto.text-center.text-lg-left
+                                        h3.text-black
+                                            a(href='https://github.com/shreyaa-sharmaa/kill-zee') Kill-Zee
+                                        h5.text-black 2D Repair Game
+                                        h5.text-black
+                                            b  | Lua, Love2D
+                                        p.mb-0.text-black-50
+                                            | • The theme of the game is: The player saves the tower from zombies while giving
+                                            | the tower the time to repair itself.
+                                            br
+                                            | • Restricted the player’s accessible boundaries, creating main menu of the game, and
+                                            | adding image to the player sprite.
+                                        hr.d-none.d-lg-block.mb-0.ml-0
+
+                //- .row
+                //-     .col-lg-6.col-sm-6
+                //-         .bg-light.text-center.project
+                //-             .d-flex
+                //-                 .project-text.text-center.text-lg-right
+                //-                     h4.text-black Ikai
+                //-                     p.mb-0.text-black-50
+                //-                         | An example of where you can put an image of a project, or anything else, along with a description.
+                //-                     hr.d-none.d-lg-block.mb-0.mr-0
+                //-     .col-lg-6.col-sm-6
+                //-         .bg-light.text-center.h-100.project
+                //-             .d-flex.h-100
+                //-                 .project-text.w-100.my-auto.text-center.text-lg-left
+                //-                     h4.text-black Rassasy
+                //-                     p.mb-0.text-black-50
+                //-                         | An example of where you can put an image of a project, or anything else, along with a description.
+                //-                     hr.d-none.d-lg-block.mb-0.ml-0
+                //- .row
+                //-     .col-lg-6.col-sm-6
+                //-         .bg-light.text-center.h-100.project
+                //-             .d-flex.h-100
+                //-                 .project-text.w-100.my-auto.text-center.text-lg-left
+                //-                     h4.text-black Kiwi
+                //-                     p.mb-0.text-black-50
+                //-                         | An example of where you can put an image of a project, or anything else, along with a description.
+                //-                     hr.d-none.d-lg-block.mb-0.ml-0
+                //-     .col-lg-6.col-sm-6
+                //-         .bg-light.text-center.h-100.project
+                //-             .d-flex.h-100
+                //-                 .project-text.w-100.my-auto.text-center.text-lg-right
+                //-                     h4.text-black Cerebro
+                //-                     p.mb-0.text-black-50
+                //-                         | Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!
+                //-                     hr.d-none.d-lg-block.mb-0.mr-0
+                //-     .col-lg-6.col-sm-6
+                //-         .bg-light.text-center.h-100.project
+                //-             .d-flex.h-100
+                //-                 .project-text.w-100.my-auto.text-center.text-lg-right
+                //-                     h4.text-black Kill-zee
+                //-                     p.mb-0.text-black-50
+                //-                         | An example of where you can put an image of a project, or anything else, along with a description.
+                //-                     hr.d-none.d-lg-block.mb-0.mr-0
         
         //- div#port
         //-     .container-fluid.p-0
