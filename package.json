@@ -1,7 +1,5 @@
 {
-    "title": "Grayscale",
-    "name": "startbootstrap-grayscale",
-    "version": "6.0.2",
+    "title": "Portfolio",
     "scripts": {
         "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
         "build:assets": "node scripts/build-assets.js",
@@ -12,7 +10,6 @@
         "start": "npm run build && node scripts/start.js",
         "start:debug": "npm run build && node scripts/start-debug.js"
     },
-    "description": "A grayscale one page HTML theme for Bootstrap.",
     "keywords": [
         "css",
         "sass",
@@ -21,20 +18,6 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/themes/grayscale",
-    "bugs": {
-        "url": "https://github.com/StartBootstrap/startbootstrap-grayscale/issues",
-        "email": "feedback@startbootstrap.com"
-    },
-    "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (http://davidmiller.io/)"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-grayscale.git"
-    },
     "dependencies": {
         "bootstrap": "4.5.0",
         "jade-bootstrap": "^1.0.14",
