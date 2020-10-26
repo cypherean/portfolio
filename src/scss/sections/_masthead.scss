@@ -3,7 +3,7 @@
     width: 100%;
     height: auto;
     min-height: 35rem;
-    padding: 15rem 0;
+    padding: 15rem 2rem;
     background: linear-gradient(
             to bottom,
             $black 0%,
@@ -17,15 +17,15 @@
     background-size: cover;
     h1 {
         font-family: $font-family-special;
-        font-size: 2.5rem;
+        font-size: 2.25rem;
         line-height: 2.5rem;
-        letter-spacing: 0.8rem;
+        letter-spacing: 0.4rem;
         background: $white;
         -webkit-text-fill-color: transparent;
         background-clip: text;
     }
     h2 {
-        font-size: 7.5rem;
+        font-size: 1.3rem;
     }
     @include media-breakpoint-up(md) {
         h1 {
@@ -43,7 +43,7 @@
         }
         h2 {
             max-width: 30rem;
-            font-size: 1.25rem;
+            font-size: 2rem;
         }
     }
 }

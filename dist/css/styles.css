@@ -10227,7 +10227,7 @@ body {
   width: 100%;
   height: auto;
   min-height: 35rem;
-  padding: 15rem 0;
+  padding: 15rem 2rem;
   background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
   background-position: center;
   background-repeat: no-repeat;
@@ -10236,16 +10236,16 @@ body {
 }
 .masthead h1 {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   line-height: 2.5rem;
-  letter-spacing: 0.8rem;
+  letter-spacing: 0.4rem;
   background: #fff;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
 }
 .masthead h2 {
-  font-size: 7.5rem;
+  font-size: 1.3rem;
 }
 @media (min-width: 768px) {
   .masthead h1 {
@@ -10265,7 +10265,7 @@ body {
   }
   .masthead h2 {
     max-width: 30rem;
-    font-size: 1.25rem;
+    font-size: 2rem;
   }
 }
 
@@ -10273,11 +10273,16 @@ body {
   padding-top: 0rem;
   padding-bottom: 50px;
   padding-left: 0%;
-  font-size: x-large;
+  font-size: large;
 }
 .about-section p {
   padding: 0.75rem;
   margin-bottom: 5rem;
+}
+@media (min-width: 992px) {
+  .about-section {
+    font-size: x-large;
+  }
 }
 .about-section .featured-text {
   padding: 2rem;
@@ -10456,8 +10461,13 @@ body {
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 5rem 0;
   background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+}
+@media (min-width: 992px) {
+  .projects-section {
+    padding: 10rem 0;
+  }
 }
 .projects-section .featured-text {
   padding: 2rem;
@@ -10486,8 +10496,13 @@ body {
 .timeline {
   position: relative;
   padding: 0;
-  padding-top: 10rem;
+  padding-top: 5rem;
   list-style: none;
+}
+@media (min-width: 992px) {
+  .timeline {
+    padding-top: 10rem;
+  }
 }
 .timeline:before {
   position: absolute;

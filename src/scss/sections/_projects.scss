@@ -1,5 +1,8 @@
 .projects-section {
-    padding: 10rem 0;
+    padding: 5rem 0;
+    @include media-breakpoint-up(lg) {
+        padding: 10rem 0;
+    }
     background: linear-gradient(
             to bottom,
             $black 0%,

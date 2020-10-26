@@ -13,7 +13,10 @@
     }
     padding-bottom: 50px;
     padding-left: 0%;
-    font-size: x-large;
+    font-size: large;
+    @include media-breakpoint-up(lg) {
+        font-size: x-large;
+    }
     .featured-text {
         padding: 2rem;
         @include media-breakpoint-up(lg) {

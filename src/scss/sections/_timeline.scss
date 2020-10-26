@@ -2,7 +2,10 @@
 .timeline {
     position: relative;
     padding: 0;
-    padding-top: 10rem;
+    padding-top: 5rem;
+    @include media-breakpoint-up(lg) {
+        padding-top: 10rem;
+    }
     list-style: none;
     &:before {
         position: absolute;
