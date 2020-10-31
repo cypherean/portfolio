@@ -1,4 +1,24 @@
 .projects-section {
+    .project {
+        margin: 1rem;
+    }
+    .proj {
+        padding: 1.5rem 2rem;
+        @include media-breakpoint-up(lg) {
+            padding: 2rem 10rem;
+        }
+        // hr {
+        //     border-color: gray;
+        //     border-width: 0.15rem;
+        //     width: 100%;
+        // }
+    }
+    .h2 {
+        padding: 3rem;
+        @include media-breakpoint-up(lg) {
+            padding: 6rem;
+        }
+    }
     padding: 5rem 0;
     @include media-breakpoint-up(lg) {
         padding: 10rem 0;
@@ -19,8 +39,15 @@
     .project-text {
         padding: 2rem;
         font-size: 100%;
+        // .head {
+        //     padding-left: 1rem;
+        // }
+        // .vl {
+        //     border-left: 8px solid $primary;
+        //     height: 1.5rem;
+        // }
         @include media-breakpoint-up(lg) {
-            padding: 5rem;
+            padding: 3rem;
             hr {
                 border-color: $primary;
                 border-width: 0.25rem;
