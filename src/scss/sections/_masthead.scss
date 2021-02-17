@@ -4,11 +4,11 @@
     height: auto;
     min-height: 35rem;
     padding: 15rem 2rem;
-    // background: linear-gradient(
-    //         to bottom,
-    //         $black 0%,
-    //         #{fade-out($primary, 0.4)} 100%,
-    //     );
+    background: linear-gradient(
+            to bottom,
+            $black 0%,
+            #{fade-out($primary, 0.4)} 100%,
+        );
     // background-position: center;
     // background-repeat: no-repeat;
     // background-attachment: scroll;

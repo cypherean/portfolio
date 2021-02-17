@@ -1,52 +1,34 @@
 .projects-section {
-    // min-height: 720px !important;
-    height: 59rem;
-    // .project {
-    //     // margin: 1rem;
-    // }
-    // .proj {
-    //     padding: 1.5rem 2rem;
-    //     @include media-breakpoint-up(lg) {
-    //         padding: 2rem 10rem;
-    //     }
-    // }
-    // .h2 {
-    //     padding: 3rem;
-    //     @include media-breakpoint-up(lg) {
-    //         padding: 6rem;
-    //     }
-    // }
-    // padding: 5rem 0;
-    // @include media-breakpoint-up(lg) {
-    //     padding: 10rem 0;
-    // }
-    // background: linear-gradient(
-    //         to bottom,
-    //         $alt 0%,
-    //         #{fade-out($primary, 0.1)} 80%,
-    //     );
-    // .featured-text {
-    //     padding: 2rem;
-    //     @include media-breakpoint-up(lg) {
-    //         padding: 0 0 0 2rem;
-    //         border-left: 0.5rem solid $black;
-    //     }
-    // }
-    .project-panel {
-        margin-top: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: row;
-        .left-pane {
-        //     background: linear-gradient(
-        //     to bottom,
-        //     $black 0%,
-        //     #{fade-out($black, 0.4)} 100%,
-        // );
-            // opacity: 0.8;
-            width: 30%;
-            margin: 0;
-            height: 59rem;
+    .project {
+        margin: 1rem;
+    }
+    .proj {
+        padding: 1.5rem 2rem;
+        @include media-breakpoint-up(lg) {
+            padding: 2rem 10rem;
+        }
+    }
+    .h2 {
+        padding: 3rem;
+        @include media-breakpoint-up(lg) {
+            padding: 6rem;
+        }
+    }
+    padding: 5rem 0;
+    @include media-breakpoint-up(lg) {
+        padding: 10rem 0;
+    }
+    background: linear-gradient(
+            to bottom,
+            $alt 0%,
+            #{fade-out($primary, 0.4)} 75%,
+            #{fade-out($primary, 0.4)} 100%
+        );
+    .featured-text {
+        padding: 2rem;
+        @include media-breakpoint-up(lg) {
+            padding: 0 0 0 2rem;
+            border-left: 0.5rem solid $primary;
         }
     }
     .project-text {
