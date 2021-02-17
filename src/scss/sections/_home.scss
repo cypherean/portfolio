@@ -1,0 +1,18 @@
+#page-top {
+    width: 100%;
+    position: static;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background: linear-gradient(
+            to bottom,
+            $black 0%,
+            #{fade-out($primary, 0.1)} 100%,
+        );
+    .cont {
+        background: linear-gradient(
+            to bottom,
+            $black 0%,
+            #{fade-out($primary, 0.3)} 80%,
+        );
+    }
+}
