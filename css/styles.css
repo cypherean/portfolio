@@ -10370,7 +10370,9 @@ body {
 .timeline {
   position: relative;
   padding: 0;
-  padding-top: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
   list-style: none;
 }
 @media (min-width: 992px) {
@@ -10391,7 +10393,7 @@ body {
 .timeline > li {
   position: relative;
   min-height: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .timeline > li:after, .timeline > li:before {
   display: table;
