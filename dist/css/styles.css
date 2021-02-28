@@ -10227,10 +10227,10 @@ body {
   position: static;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background: linear-gradient(to bottom, #000000 0%, rgba(100, 161, 157, 0.9) 100%);
+  background: linear-gradient(to bottom, #000000 0%, rgba(100, 161, 157, 0.8) 20%);
 }
 #page-top .cont {
-  background: linear-gradient(to bottom, #000000 0%, rgba(100, 161, 157, 0.7) 80%);
+  background: linear-gradient(to bottom, #000000 0%, rgba(100, 161, 157, 0.6) 80%);
 }
 
 .masthead {
@@ -10275,8 +10275,14 @@ body {
     font-size: 2rem;
   }
 }
+.masthead .social-tab {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0%;
+}
 
 .about-section {
+  position: relative;
   padding-top: 0rem;
   padding-bottom: 50px;
   padding-left: 0%;

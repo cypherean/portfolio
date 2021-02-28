@@ -6,13 +6,13 @@
     background: linear-gradient(
             to bottom,
             $black 0%,
-            #{fade-out($primary, 0.1)} 100%,
+            #{fade-out($primary, 0.2)} 20%,
         );
     .cont {
         background: linear-gradient(
             to bottom,
             $black 0%,
-            #{fade-out($primary, 0.3)} 80%,
+            #{fade-out($primary, 0.4)} 80%,
         );
     }
 }
