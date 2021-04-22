@@ -8,7 +8,7 @@ html(lang='en')
         meta(name='description' content='')
         meta(name='author' content='')
 
-        title Shreya Sharma
+        title Shreyaa Sharma
 
         link(rel='icon' type='image/x-icon' href='assets/img/favicon.ico')
 
@@ -28,7 +28,7 @@ html(lang='en')
             // Navigation
             nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
                 .container
-                    a.navbar-brand.js-scroll-trigger(href='#page-top') My Portfolio.
+                    a.navbar-brand.js-scroll-trigger(href='#page-top') cypherean
                     button.navbar-toggler.navbar-toggler-right(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
                         | Menu
                         i.fas.fa-bars
@@ -48,7 +48,7 @@ html(lang='en')
                 .container.d-flex.h-100.align-items-center
                     .px-md-5
                         h1.text-white.mx-auto Hey,
-                        h1.mx-auto I'm Shreya.
+                        h1.mx-auto I'm Shreyaa.
                         h2.text-white-50.mt-2.mb-5 Welcome to my Portfolio.
                         // Social Tab 
                         .container.social-tab
@@ -67,35 +67,39 @@ html(lang='en')
 
             // About
             section#about.about-section.text-center.bg-light
-                .container
-                    .col.justify-content-center
-                        .row
-                            .col-lg-16
-                                .text-center.h-100.project
-                                    .d-flex.h-100
-                                        .project-text.w-100.my-auto.text-center.text-lg-left
-                                            h4.text-black About 
-                                            p.mb-0.text-black-50
-                                                | Hey, I'm Shreya! 
-                                            p.mb-0.text-black-50
-                                                | I've been in love with coding ever since I discovered what a few lines of code could do.
-                                                | I learnt about HTML, CSS and C++ in school and have been exploring the coding world ever 
-                                                | since I stepped foot in College. 
-                                            p.mb-0.text-black-50
-                                                | Fueled by high energy levels and boundless enthusiasm, I’m easily inspired and more then willing to follow
-                                                | my fascinations wherever they take me. I’m passionate, expressive, multi-talented spirit with a natural 
-                                                | ability to entertain and inspire. I’m never satisfied to just come up with ideas. Instead I have an almost 
-                                                | impulsive need to act on them.
-                                            p.mb-0.text-black-50
-                                                | I prefer to keep learning, continue challenging myself, and do interesting things that matter.
-                                                | I’m a fast learner, able to pick up new skills and juggle different projects and 
-                                                | roles with relative ease. 
-                                            p.mb-0.text-black-50
-                                                | When not coding, you'll find me surfing the internet for Tech Blogs or neck deep in a thriller fiction. 
-                                                | I often indulge in baking and trying my hand out at competitive programming.
-                                            hr.d-none.d-lg-block.mb-0.ml-0
+                // Featured Project Row
+                .row.align-items-center.no-gutters.mb-4.mb-lg-5
+                    .col-xl-6.col-lg-5
+                        img.about-me-pic.img-fluid.mb-3.mb-lg-0(src='assets/img/cypher1.jpeg', alt='...')
+                    .col-xl-5.col-lg-6
+                        .featured-text.text-center.text-lg-left
+                            h4 About Me
+                            br
+                            p.text-black-50.mb-0
+                                | Hey, I'm Shreyaa! 
+                            br
+                            p.mb-0.text-black-50
+                                | I've been in love with coding ever since I discovered what a few lines of code could do.
+                                | I learnt about HTML, CSS and C++ in school and have been exploring the coding world ever 
+                                | since I stepped foot in College. 
+                            br
+                            p.mb-0.text-black-50
+                                | Fueled by high energy levels and boundless enthusiasm, I’m easily inspired and more then willing to follow
+                                | my fascinations wherever they take me. I’m passionate, expressive, multi-talented spirit with a natural 
+                                | ability to entertain and inspire. I’m never satisfied to just come up with ideas. Instead I have an almost 
+                                | impulsive need to act on them.
+                            br
+                            p.mb-0.text-black-50
+                                | I prefer to keep learning, continue challenging myself, and do interesting things that matter.
+                                | I’m a fast learner, able to pick up new skills and juggle different projects and 
+                                | roles with relative ease. 
+                            br
+                            p.mb-0.text-black-50
+                                | When not coding, you'll find me surfing the internet for Tech Blogs or neck deep in a thriller fiction. 
+                                | I often indulge in baking and trying my hand out at competitive programming.
+                            hr.d-none.d-lg-block.mb-0.ml-0
 
-            // Projects
+        // Projects
         section#projects.projects-section
             .container
                 .col.justify-content-center.bg-light.proj
@@ -333,7 +337,7 @@ html(lang='en')
         // Footer
         footer.footer.bg-black.small.text-center.text-white-50
             .container
-                | Shreya Sharma
+                | Shreyaa Sharma
 
             // Bootstrap core JS
             script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
