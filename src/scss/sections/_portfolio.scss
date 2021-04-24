@@ -1,5 +1,31 @@
 // Styling for the portfolio section
 #portfolio {
+    padding: 2rem 0;
+    background: linear-gradient(to bottom, $black 0%, #{fade-out($black, 0)} 0%);
+    display: grid;
+    grid-template-areas:
+        "a a c"
+        "b b c"
+        "d e e"
+        "d f f";
+    .item-1 {
+        grid-area: a;
+    }
+    .item-2 {
+        grid-area: c;
+    }
+    .item-3 {
+        grid-area: b;
+    }
+    .item-4 {
+        grid-area: d;
+    }
+    .item-5 {
+        grid-area: e;
+    }
+    .item-6 {
+        grid-area: f;
+    }
     .portfolio-item {
         max-width: 25rem;
         margin-left: auto;

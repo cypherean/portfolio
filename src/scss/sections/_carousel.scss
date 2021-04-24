@@ -1,0 +1,14 @@
+#carouselProjects {
+    height: 90vh;
+    .carousel-item {
+        padding: 10vh 20vw;
+        .info-card {
+            height: 70vh;
+            width: 60vw;
+            background: rgba(black, 0.5);
+            .project-text {
+                align-content: center;
+            }
+        }
+    }
+}

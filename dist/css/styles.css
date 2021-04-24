@@ -10233,6 +10233,21 @@ body {
   background: linear-gradient(to bottom, #000000 0%, rgba(100, 161, 157, 0.6) 80%);
 }
 
+#carouselProjects {
+  height: 90vh;
+}
+#carouselProjects .carousel-item {
+  padding: 10vh 20vw;
+}
+#carouselProjects .carousel-item .info-card {
+  height: 70vh;
+  width: 60vw;
+  background: rgba(0, 0, 0, 0.5);
+}
+#carouselProjects .carousel-item .info-card .project-text {
+  align-content: center;
+}
+
 .masthead {
   position: relative;
   width: 100%;
@@ -10282,7 +10297,7 @@ body {
 }
 
 .about-section {
-  padding: 10rem 0;
+  padding: 5rem 0;
   align-items: center;
 }
 .about-section .about-me-pic {
@@ -10317,6 +10332,30 @@ body {
   }
 }
 
+#portfolio {
+  padding: 2rem 0;
+  background: linear-gradient(to bottom, #000000 0%, black 0%);
+  display: grid;
+  grid-template-areas: "a a c" "b b c" "d e e" "d f f";
+}
+#portfolio .item-1 {
+  grid-area: a;
+}
+#portfolio .item-2 {
+  grid-area: c;
+}
+#portfolio .item-3 {
+  grid-area: b;
+}
+#portfolio .item-4 {
+  grid-area: d;
+}
+#portfolio .item-5 {
+  grid-area: e;
+}
+#portfolio .item-6 {
+  grid-area: f;
+}
 #portfolio .portfolio-item {
   max-width: 25rem;
   margin-left: auto;

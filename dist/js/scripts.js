@@ -53,4 +53,19 @@
     // Collapse the navbar when page is scrolled
     $(window).on('scroll', navbarCollapse);
 
+    $(".carousel").swipe({
+
+        swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+
+            if (direction == 'left') $(this).carousel('next');
+            if (direction == 'right') $(this).carousel('prev');
+
+        },
+        allowPageScroll: "vertical"
+
+    });
+    $('.carousel').carousel({
+        interval: 3000
+    })
+
 })(jQuery); // End of use strict
