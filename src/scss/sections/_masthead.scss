@@ -1,3 +1,10 @@
+.mastheadwrapper{
+    background: linear-gradient(
+            to bottom,
+            $black 0%,
+            #{fade-out($primary, 0.4)} 80%,
+        );
+}
 .masthead {
     position: relative;
     width: 100%;

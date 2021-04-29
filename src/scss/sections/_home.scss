@@ -9,10 +9,11 @@
             #{fade-out($primary, 0.2)} 20%,
         );
     .cont {
-        background: linear-gradient(
-            to bottom,
-            $black 0%,
-            #{fade-out($primary, 0.4)} 80%,
-        );
+        // background: linear-gradient(
+        //     to bottom,
+        //     $black 0%,
+        //     #{fade-out($primary, 0.4)} 80%,
+        // );
+        background-color: #f7f7f7;
     }
 }
