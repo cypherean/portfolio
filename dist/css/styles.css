@@ -10452,6 +10452,11 @@ body {
 .projects-section h2 .v1 {
   color: #64a19d;
 }
+.projects-section .icon {
+  width: 33px;
+  padding: 0%;
+  padding-bottom: 4px;
+}
 .projects-section .project {
   padding-left: 0;
   margin-left: 0;

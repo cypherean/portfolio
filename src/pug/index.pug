@@ -49,7 +49,7 @@ html(lang='en')
                 .px-md-5
                     h1.text-white.mx-auto Hey,
                     h1.mx-auto I'm Shreyaa.
-                    h2.text-white-50.mt-2.mb-5 Welcome to my Portfolio.
+                    //- h2.text-white-50.mt-2.mb-5 Welcome to my Portfolio.
                     // Social Tab 
                     .container.social-tab
                         a.mx-2(href='https://github.com/cypherean')  
@@ -262,24 +262,54 @@ html(lang='en')
                             .bg-white.text-center.project
                                 .project-text.w-100.my-auto.text-lg-left
                                     h2.text-primary
+                                        b CricLive
+                                    h4.text-black 
+                                        b Realtime Cricket Match Generator
+                                    h5.text-black
+                                        | Unity3D, Blender
+                                    h5.mb-0.text-black-50
+                                        | The cross platform app takes cricket text-commentary as input and generates live streaming of Cricket Match. 
+                                        br
+                                        br
+                                        | The app was developed for Inout7.0 hackathon and bagged second position.
+                                    hr.d-none.d-lg-block.mb-0.ml-0
+                                    .project-link
+                                        a(href='https://gitter.im/shreyaa-sharmaa')
+                                            i.fab.fa-github.fa-lg
+                                        a(href='https://gitter.im/shreyaa-sharmaa')
+                                            img.icon(src='assets/img/de.svg')
+                                        a.portfolio-link(data-toggle='modal' href='#portfolioModal3')
+                                            | Read more
+                                            i.fas.fa-angle-right.fa-lg
+                                img.d-block.app-img(src='assets/img/portfolio/criclive.png' alt='CricLive')
+                        .col-lg-12
+                            .bg-white.text-center.project
+                                .project-text.w-100.my-auto.text-lg-left
+                                    h2.text-primary
                                         b Ikai
                                     h4.text-black 
                                         b File Scanning, Editing and Sharing App 
                                     h5.text-black
                                         | React-native, Django
-                                    p.mb-0.text-black-50
-                                        | • Ikai can scan, edit multimedia, share in both online and offline
+                                    h5.mb-0.text-black-50
+                                        | Ikai can scan, edit multimedia, share in both online and offline
                                         | mode and has the chat feature to facilitate smooth remote collaboration.
+                                        //- p.mb-0.text-black-50
+                                        //-     | • Ikai can scan, edit multimedia, share in both online and offline
+                                        //-     | mode and has the chat feature to facilitate smooth remote collaboration.
                                         br
-                                        | • Implemented offline file sharing using TCP and rn-fetch-blob.
+                                        br
+                                        | The app was developed for HAB59 hackathon and bagged the first prize in Office Productivity Category.
                                     hr.d-none.d-lg-block.mb-0.ml-0
-                                    //- .project-link
-                                    //-     a.mx-2(href='https://gitter.im/shreyaa-sharmaa')
-                                    //-         i.fab.fa-github.fa-lg
-                                    //-     a.portfolio-link(data-toggle='modal' href='#portfolioModal3')
-                                    //-         | Read more
-                                    //-         i.fas.fa-angle-right.fa-lg
-                                //- img.d-block.app-img(src='assets/img/portfolio/thumbnails/2.jpg' alt='Second slide')
+                                    .project-link
+                                        a(href='https://gitter.im/shreyaa-sharmaa')
+                                            i.fab.fa-github.fa-lg
+                                        a(href='https://gitter.im/shreyaa-sharmaa')
+                                            img.icon(src='assets/img/de.svg')
+                                        a.portfolio-link(data-toggle='modal' href='#portfolioModal3')
+                                            | Read more
+                                            i.fas.fa-angle-right.fa-lg
+                                img.d-block.app-img(src='assets/img/portfolio/ikai.png' alt='Ikai')
                         .col-lg-12
                             .bg-white.text-center.project
                                 .project-text.w-100.my-auto.text-center.text-lg-left
@@ -289,42 +319,25 @@ html(lang='en')
                                         b Open Source Status Page
                                     h5.text-black
                                         | Go
-                                    p.mb-0.text-black-50
-                                        | • Pinger is an uptime and status monitoring application written in Go.
+                                    h5.mb-0.text-black-50
+                                        | Pinger is an uptime and status monitoring app with pluggable probes, storage backends and alerts. 
                                         br
-                                        | • Developed the alert system to send notifications on slack,
+                                        br
+                                        | I developed the alert system to send notifications on slack, 
                                         | discord and mail when status of a test changes.
+                                    //- p.mb-0.text-black-50
+                                    //-     | • Pinger is an uptime and status monitoring application written in Go.
+                                    //-     br
+                                    //-     | • Developed the alert system to send notifications on slack,
+                                    //-     | discord and mail when status of a test changes.
                                     hr.d-none.d-lg-block.mb-0.ml-0
-                        .col-lg-12
-                            .bg-white.text-center.project
-                                .project-text.w-100.my-auto.text-center.text-lg-left
-                                    h2.text-primary
-                                        b Rassasy
-                                    h4.text-black 
-                                        b Canteen Pre-ordering System
-                                    h5.text-black
-                                        | HTML, CSS, Javascript, PHP, SQL
-                                    p.mb-0.text-black-50
-                                        | • Spearheaded the development of a pre-ordering system in campus canteens for Winter of Code 2019.
-                                        br
-                                        | • Students order in advance and the canteen manager updates their order
-                                        | statuses. The order and order status are dynamically rendered.
-                                    hr.d-none.d-lg-block.mb-0.ml-0
-                        .col-lg-12
-                            .bg-white.text-center.project
-                                .project-text.w-100.my-auto.text-center.text-lg-left
-                                    h2.text-primary
-                                        b Kiwi
-                                    h4.text-black 
-                                        b Key-Value Store
-                                    h5.text-black
-                                        | Go
-                                    p.mb-0.text-black-50
-                                        | • Kiwi is a minimalistic in-memory key-value store written in Go.
-                                        br
-                                        | • Implemented function to add JSON support for storing the values in JSON
-                                        | format and using them in GoLang format from a stored file.
-                                    hr.d-none.d-lg-block.mb-0.ml-0
+                                    .project-link
+                                        a.mx-2(href='https://gitter.im/shreyaa-sharmaa')
+                                            i.fab.fa-github.fa-lg
+                                        a(href='https://gitter.im/shreyaa-sharmaa')
+                                            | Open App
+                                            i.fas.fa-angle-right.fa-lg
+                                img.d-block.app-img(src='assets/img/portfolio/pinger.png' alt='Pinger')
                         .col-lg-12
                             .bg-white.text-center.project
                                 .project-text.w-100.my-auto.text-center.text-lg-left
@@ -334,28 +347,79 @@ html(lang='en')
                                         b Machine Learning Competitions' Platform
                                     h5.text-black
                                         | React
-                                    p.mb-0.text-black-50
-                                        | • Cerebro is a platform for predictive modeling and analytics competitions
-                                        | for the campus.
+                                    h5.mb-0.text-black-50
+                                        | Cerebro is a platform for predictive modeling and analytics competitions.
+                                        //- | for the campus.p.mb-0.text-black-50
+                                        //- | • Cerebro is a platform for predictive modeling and analytics competitions
+                                        //- | for the campus.
                                         br
-                                        | • Implemented lazy loading in the website using React.  
+                                        br
+                                        | I worked on the React based UI to implement lazy loading in the website and optimise load time. 
                                     hr.d-none.d-lg-block.mb-0.ml-0
+                                    .project-link
+                                        //- a.mx-2(href='https://gitter.im/shreyaa-sharmaa')
+                                        //-     i.fab.fa-github.fa-lg
+                                        a(href='https://gitter.im/shreyaa-sharmaa')
+                                            | Open App
+                                            i.fas.fa-angle-right.fa-lg
+                                img.d-block.app-img(src='assets/img/portfolio/cerebro.png' alt='Cerebro')
                         .col-lg-12
                             .bg-white.text-center.project
                                 .project-text.w-100.my-auto.text-center.text-lg-left
                                     h2.text-primary
-                                        b Kill-Zee
+                                        b Kiwi
                                     h4.text-black 
-                                        b 2D Repair Game
+                                        b Key-Value Store
                                     h5.text-black
-                                        | Lua, Love2D
-                                    p.mb-0.text-black-50
-                                        | • The theme of the game is: The player saves the tower from zombies while giving
-                                        | the tower the time to repair itself.
+                                        | Go
+                                    h5.mb-0.text-black-50
+                                        | Kiwi is a minimalistic in-memory key-value store written in Go.
                                         br
-                                        | • Restricted the player’s accessible boundaries, creating main menu of the game, and
-                                        | adding image to the player sprite.
+                                        | I implemented function to add JSON support for storing the values in JSON
+                                        | format and using them in GoLang format from a stored file.
                                     hr.d-none.d-lg-block.mb-0.ml-0
+                                    .project-link
+                                        a.mx-2(href='https://gitter.im/shreyaa-sharmaa')
+                                            i.fab.fa-github.fa-lg
+                                        //- a.portfolio-link(data-toggle='modal' href='#portfolioModal3')
+                                        //-     | Read more
+                                        //-     i.fas.fa-angle-right.fa-lg
+                                //- img.d-block.app-img(src='assets/img/portfolio/kiwi.jpg' alt='Kiwi')
+                        .col-lg-12
+                            .bg-white.text-center.project
+                                .project-text.w-100.my-auto.text-center.text-lg-left
+                                    h2.text-primary
+                                        b Rassasy
+                                    h4.text-black 
+                                        b Canteen Pre-ordering System
+                                    h5.text-black
+                                        | HTML, CSS, Javascript, PHP, SQL
+                                    h5.mb-0.text-black-50
+                                        | I spearheaded the development of a pre-ordering system in campus canteens for Winter of Code 2019.
+                                        br
+                                        | Students order in advance and the canteen manager updates their order
+                                        | statuses. The order and order status are dynamically rendered.
+                                    hr.d-none.d-lg-block.mb-0.ml-0
+                                    .project-link
+                                        a.mx-2(href='https://gitter.im/shreyaa-sharmaa')
+                                            i.fab.fa-github.fa-lg
+                        
+                        //- .col-lg-12
+                        //-     .bg-white.text-center.project
+                        //-         .project-text.w-100.my-auto.text-center.text-lg-left
+                        //-             h2.text-primary
+                        //-                 b Kill-Zee
+                        //-             h4.text-black 
+                        //-                 b 2D Repair Game
+                        //-             h5.text-black
+                        //-                 | Lua, Love2D
+                        //-             p.mb-0.text-black-50
+                        //-                 | • The theme of the game is: The player saves the tower from zombies while giving
+                        //-                 | the tower the time to repair itself.
+                        //-                 br
+                        //-                 | • Restricted the player’s accessible boundaries, creating main menu of the game, and
+                        //-                 | adding image to the player sprite.
+                        //-             hr.d-none.d-lg-block.mb-0.ml-0
 
 
         // Timeline
