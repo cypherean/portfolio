@@ -24,8 +24,9 @@ $brand-color:#df8625;
     }
 }
 
-.ps-timeline-sec {
+#ps-timeline-sec {
     position: relative;
+    background: #f7f7f7;
 
     .container {
         position: relative;
@@ -34,7 +35,7 @@ $brand-color:#df8625;
 
             @include respond-to(xs) {
                 &:before {
-                    background: $brand-color-g;
+                    // background: $brand-color-g;
                     content: "";
                     width: 10px;
                     height: 10px;
@@ -45,7 +46,7 @@ $brand-color:#df8625;
                 }
 
                 &:after {
-                    background: #348e80;
+                    // background: #348e80;
                     content: "";
                     width: 10px;
                     height: 10px;
@@ -177,7 +178,7 @@ $brand-color:#df8625;
 
 
             &:before {
-                background: $brand-color-g;
+                // background: $brand-color-g;
                 content: "";
                 width: 10px;
                 height: 10px;
@@ -188,7 +189,7 @@ $brand-color:#df8625;
             }
 
             &:after {
-                background: $brand-color-g;
+                // background: $brand-color-g;
                 content: "";
                 width: 10px;
                 height: 10px;
@@ -231,7 +232,7 @@ $brand-color:#df8625;
                                 color: $brand-color-g;
                                 width: 2px;
                                 height: 50px;
-                                background: $brand-color-g;
+                                // background: $brand-color-g;
                                 position: absolute;
                                 top: -50px;
                                 left: 50%;
@@ -242,7 +243,7 @@ $brand-color:#df8625;
                                 color: $brand-color-g;
                                 width: 8px;
                                 height: 8px;
-                                background: $brand-color-g;
+                                // background: $brand-color-g;
                                 position: absolute;
                                 bottom: 90px;
                                 left: 44%;
@@ -256,7 +257,7 @@ $brand-color:#df8625;
                                 color: $brand-color-g;
                                 width: 2px;
                                 height: 50px;
-                                background: $brand-color-g;
+                                // background: $brand-color-g;
                                 position: absolute;
                                 bottom: -50px;
                                 left: 50%;
@@ -267,7 +268,7 @@ $brand-color:#df8625;
                                 color: $brand-color-g;
                                 width: 8px;
                                 height: 8px;
-                                background: $brand-color-g;
+                                // background: $brand-color-g;
                                 position: absolute;
                                 top: 90px;
                                 left: 44%;
