@@ -1,29 +1,35 @@
 .projects-section {
-    .project {
-        margin: 1rem;
-    }
     .proj {
-        padding: 1.5rem 2rem;
         @include media-breakpoint-up(lg) {
-            padding: 2rem 10rem;
+            padding: 1.5rem 0rem;
+        }
+        hr {
+            padding-bottom: 1rem;
         }
     }
-    .h2 {
-        padding: 3rem;
-        @include media-breakpoint-up(lg) {
-            padding: 6rem;
+    h2 {
+        color: #333333;
+        // padding: 3rem;
+        // @include media-breakpoint-up(lg) {
+        //     padding: 1.5rem;
+        // }
+        .v1 {
+            color: $primary;
         }
     }
-    padding: 5rem 0;
+    .project {
+        // width: 70vw;
+        padding-left: 0;
+        margin-left: 0;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+    }
+    padding: 1.5rem 0;
     @include media-breakpoint-up(lg) {
-        padding: 10rem 0;
+        padding: 1.5rem 0;
     }
-    background: linear-gradient(
-            to bottom,
-            $alt 0%,
-            #{fade-out($primary, 0.4)} 75%,
-            #{fade-out($primary, 0.4)} 100%
-        );
+    background: #fff;
     .featured-text {
         padding: 2rem;
         @include media-breakpoint-up(lg) {
@@ -31,8 +37,12 @@
             border-left: 0.5rem solid $primary;
         }
     }
+    .app-img {
+        width: 500px;
+        height: auto;
+    }
     .project-text {
-        padding: 2rem;
+        // padding: 2rem;
         font-size: 100%;
         @include media-breakpoint-up(lg) {
             padding: 3rem;
