@@ -10230,7 +10230,7 @@ body {
   background: linear-gradient(to bottom, #000000 0%, rgba(100, 161, 157, 0.8) 20%);
 }
 #page-top .cont {
-  background: linear-gradient(to bottom, #000000 0%, rgba(100, 161, 157, 0.6) 80%);
+  background-color: #f7f7f7;
 }
 
 #carouselProjects {
@@ -10246,6 +10246,10 @@ body {
 }
 #carouselProjects .carousel-item .info-card .project-text {
   align-content: center;
+}
+
+.mastheadwrapper {
+  background: linear-gradient(to bottom, #000000 0%, rgba(100, 161, 157, 0.6) 80%);
 }
 
 .masthead {
