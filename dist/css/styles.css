@@ -10459,6 +10459,12 @@ body {
   display: flex;
   flex-direction: row;
 }
+.projects-section .project .project-links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 @media (min-width: 992px) {
   .projects-section {
     padding: 1.5rem 0;

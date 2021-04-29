@@ -35,8 +35,6 @@ html(lang='en')
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ml-auto
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#home') Home
-                        li.nav-item
                             a.nav-link.js-scroll-trigger(href='#about') About
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#projects') Projects
@@ -46,7 +44,7 @@ html(lang='en')
                             a.nav-link.js-scroll-trigger(href='#contact') Contact
 
         // Masthead
-        header.masthead#home
+        header.masthead
             .container.d-flex.h-100.align-items-center
                 .px-md-5
                     h1.text-white.mx-auto Hey,
@@ -275,13 +273,12 @@ html(lang='en')
                                         br
                                         | • Implemented offline file sharing using TCP and rn-fetch-blob.
                                     hr.d-none.d-lg-block.mb-0.ml-0
-                                //-     .social.d-flex.justify-content-left
-                                //-         a.mx-2(href='https://gitter.im/shreyaa-sharmaa')
-                                //-             i.fab.fa-github
-                                //-         a.mx-2(href='https://www.linkedin.com/in/cypherean/')
-                                //-             i.fab.fa-linkedin
-                                //-         a.mx-2(href='https://www.linkedin.com/in/cypherean/')
-                                //-             i.fab.fa-twitter
+                                    //- .project-link
+                                    //-     a.mx-2(href='https://gitter.im/shreyaa-sharmaa')
+                                    //-         i.fab.fa-github.fa-lg
+                                    //-     a.portfolio-link(data-toggle='modal' href='#portfolioModal3')
+                                    //-         | Read more
+                                    //-         i.fas.fa-angle-right.fa-lg
                                 //- img.d-block.app-img(src='assets/img/portfolio/thumbnails/2.jpg' alt='Second slide')
                         .col-lg-12
                             .bg-white.text-center.project
