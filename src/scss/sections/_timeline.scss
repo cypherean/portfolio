@@ -3,10 +3,10 @@
     position: relative;
     padding: 0;
     padding-top: 2rem;
-    padding-bottom: 0%;
+    padding-bottom: 5rem;
     margin-bottom: 0%;
     @include media-breakpoint-up(lg) {
-        padding-top: 10rem;
+        padding-top: 5rem;
     }
     list-style: none;
     &:before {
@@ -91,6 +91,7 @@
     }
     .timeline-heading {
         h4 {
+            text-align: center;
             margin-top: 0;
             color: inherit;
             &.subheading {
@@ -111,8 +112,8 @@
             left: 50%;
         }
         > li {
-            min-height: 100px;
-            margin-bottom: 100px;
+            min-height: 80px;
+            margin-bottom: 40px;
             .timeline-panel {
                 float: left;
                 width: 41%;
@@ -164,7 +165,7 @@
 @include media-breakpoint-up(xl) {
     .timeline {
         > li {
-            min-height: 170px;
+            min-height: 100px;
             .timeline-panel {
                 padding: 0 20px 20px 100px;
             }
@@ -177,7 +178,7 @@
                 }
             }
             &.timeline-inverted > .timeline-panel {
-                padding: 0 100px 20px 20px;
+                padding: 0 40px 20px 20px;
             }
         }
     }

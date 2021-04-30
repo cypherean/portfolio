@@ -1,23 +1,20 @@
-$brand-color-g:#348e80;
-$brand-color:#df8625;
+$brand-color-g: $primary;
+$brand-color: #df8625;
 
 @mixin respond-to($breakpoint) {
     @if $breakpoint == "xs" {
         @media screen and (max-width: 767px) {
-          @content;
+            @content;
         }
-    }
-    @else if $breakpoint == "sm" {
+    } @else if $breakpoint == "sm" {
         @media (min-width: 768px) and (max-width: 991px) {
             @content;
         }
-    }
-    @else if $breakpoint == "md" {
+    } @else if $breakpoint == "md" {
         @media (min-width: 992px) and (max-width: 1199px) {
             @content;
         }
-    }
-    @else if $breakpoint == "lg" {
+    } @else if $breakpoint == "lg" {
         @media screen and (min-width: 1200px) {
             @content;
         }
@@ -32,10 +29,9 @@ $brand-color:#df8625;
         position: relative;
 
         ol {
-
             @include respond-to(xs) {
                 &:before {
-                    // background: $brand-color-g;
+                    background: $brand-color-g;
                     content: "";
                     width: 10px;
                     height: 10px;
@@ -46,7 +42,7 @@ $brand-color:#df8625;
                 }
 
                 &:after {
-                    // background: #348e80;
+                    background: #348e80;
                     content: "";
                     width: 10px;
                     height: 10px;
@@ -100,9 +96,8 @@ $brand-color:#df8625;
                             }
                         }
 
-
-
                         span {
+                            background: $primary;
                             left: 0 !important;
 
                             &.ps-sp-top {
@@ -176,27 +171,26 @@ $brand-color:#df8625;
                 }
             }
 
-
             &:before {
-                // background: $brand-color-g;
+                background: $brand-color-g;
                 content: "";
                 width: 10px;
                 height: 10px;
                 border-radius: 100%;
                 position: absolute;
                 left: 8px;
-                top: 49.5%;
+                top: 98.7%;
             }
 
             &:after {
-                // background: $brand-color-g;
+                background: $brand-color-g;
                 content: "";
                 width: 10px;
                 height: 10px;
                 border-radius: 100%;
                 position: absolute;
                 right: 8px;
-                top: 49.5%;
+                top: 98.7%;
             }
 
             &.ps-timeline {
@@ -212,10 +206,11 @@ $brand-color:#df8625;
                     position: relative;
 
                     span {
-                        width: 50px;
-                        height: 50px;
+                        background: $primary;
+                        width: 100px;
+                        height: 100px;
                         margin-left: -25px;
-                        border: 4px solid $brand-color-g;
+                        border: 4px solid $gray-200;
                         border-radius: 50%;
                         text-align: center;
                         line-height: 50px -10;
@@ -228,22 +223,22 @@ $brand-color:#df8625;
 
                         &.ps-sp-top {
                             &:before {
-                                content: '';
+                                content: "";
                                 color: $brand-color-g;
                                 width: 2px;
                                 height: 50px;
-                                // background: $brand-color-g;
+                                background: $brand-color-g;
                                 position: absolute;
                                 top: -50px;
                                 left: 50%;
                             }
 
                             &:after {
-                                content: '';
+                                content: "";
                                 color: $brand-color-g;
                                 width: 8px;
                                 height: 8px;
-                                // background: $brand-color-g;
+                                background: $brand-color-g;
                                 position: absolute;
                                 bottom: 90px;
                                 left: 44%;
@@ -253,22 +248,22 @@ $brand-color:#df8625;
 
                         &.ps-sp-bot {
                             &:before {
-                                content: '';
+                                content: "";
                                 color: $brand-color-g;
                                 width: 2px;
                                 height: 50px;
-                                // background: $brand-color-g;
+                                background: $brand-color-g;
                                 position: absolute;
                                 bottom: -50px;
                                 left: 50%;
                             }
 
                             &:after {
-                                content: '';
+                                content: "";
                                 color: $brand-color-g;
                                 width: 8px;
                                 height: 8px;
-                                // background: $brand-color-g;
+                                background: $brand-color-g;
                                 position: absolute;
                                 top: 90px;
                                 left: 44%;
@@ -286,6 +281,11 @@ $brand-color:#df8625;
                         img {
                             display: table;
                             margin: 0 auto;
+                            width: 150px;
+                        }
+                        .img-tm {
+                            width: 110px;
+                            padding-bottom: 20px;
                         }
                     }
 
@@ -297,6 +297,10 @@ $brand-color:#df8625;
                         img {
                             display: table;
                             margin: 0 auto;
+                            width: 150px;
+                        }
+                        .img-tm {
+                            width: 150px;
                         }
                     }
 
