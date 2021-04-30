@@ -10232,6 +10232,40 @@ body {
 #page-top .cont {
   background-color: #f8f9fa;
 }
+#page-top .tooltip {
+  position: relative;
+  display: inline-block;
+}
+#page-top .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+#page-top .tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+#page-top .tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
 
 #carouselProjects {
   height: 90vh;
@@ -10936,25 +10970,12 @@ body {
 }
 
 .contact-section {
-  padding-top: 5rem;
-}
-.contact-section .card {
-  border: 0;
-  border-bottom: 0.25rem solid #64a19d;
-}
-.contact-section .card h4 {
-  font-size: 0.8rem;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-}
-.contact-section .card hr {
-  border-color: #64a19d;
-  border-width: 0.25rem;
-  width: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
 }
 .contact-section .social {
-  margin-top: 5rem;
+  margin-right: 0;
 }
 .contact-section .social a {
   text-align: center;
