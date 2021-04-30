@@ -53,14 +53,14 @@ html(lang='en')
                         //- h2.text-white-50.mt-2.mb-5 Welcome to my Portfolio.
                         // Social Tab 
                         .container.social-tab
-                            a.mx-2(href='https://github.com/cypherean')  
-                                i.fab.fa-github.fa-2x.text-primary.mb-2
+                            a.mx-2(href='https://github.com/cypherean')
+                                i.fab.fa-github.fa-2x
                             a.mx-2(href='mailto:cypherean@gmail.com') 
-                                i.fas.fa-envelope.fa-2x.text-primary.mb-2
+                                i.fas.fa-envelope.fa-2x.
                             a.mx-2(href='https://www.linkedin.com/in/shreyaa-sharma/') 
-                                i.fab.fa-linkedin.fa-2x.text-primary.mb-2
+                                i.fab.fa-linkedin.fa-2x
                             a.mx-2(href='https://twitter.com/cypherean')
-                                i.fab.fa-twitter.fa-2x.text-primary.mb-2
+                                i.fab.fa-twitter.fa-2x
                             a.mx-2(href='https://gitter.im/shreyaa-sharmaa')
                                 i.fab.fa-gitter.fa-2x
                             a.mx-2(href='assets/docs/resume.pdf')
@@ -566,43 +566,74 @@ html(lang='en')
         // Contact
         section#contact.contact-section.bg-black
             .container
-                .row
-                    .col-md-4.mb-3.mb-md-0
-                        .card.py-4.h-100
-                            .card-body.text-center
-                                i.fab.fa-github.text-primary.mb-2
-                                h4.text-uppercase.m-0 Github
-                                hr.my-4
-                                .small.text-black-50
-                                    a(href='https://github.com/cypherean') cypherean
-                    .col-md-4.mb-3.mb-md-0
-                        .card.py-4.h-100
-                            .card-body.text-center
-                                i.fas.fa-envelope.text-primary.mb-2
-                                h4.text-uppercase.m-0 Email
-                                hr.my-4
-                                .small.text-black-50
-                                    a(href='#!') cypherean@gmail.com
-                    .col-md-4.mb-3.mb-md-0
-                        .card.py-4.h-100
-                            .card-body.text-center
-                                i.fas.fa-file.text-primary.mb-2
-                                h4.text-uppercase.m-0 Resume
-                                hr.my-4
-                                .small.text-black-50
-                                    a(href='assets/docs/resume.pdf') Resume
-                .social.d-flex.justify-content-center
-                    a.mx-2(href='https://gitter.im/shreyaa-sharmaa')
-                        i.fab.fa-gitter
-                    a.mx-2(href='https://www.linkedin.com/in/cypherean/')
-                        i.fab.fa-linkedin
-                    a.mx-2(href='https://www.linkedin.com/in/cypherean/')
-                        i.fab.fa-twitter
+                .row.d-flex.justify-content-between
+                    .col-lg-8
+                        .cred.text-white 
+                            //- | Stay tuned!
+                            //- br
+                            | Best, 
+                            br 
+                            | Shreyaa Sharma
+                        //- .row
+                        //-     .col-md-4.mb-3.mb-md-0
+                        //-         .card.py-4.h-100
+                        //-             .card-body.text-center
+                        //-                 i.fab.fa-github.text-primary.mb-2
+                        //-                 h4.text-uppercase.m-0 Github
+                        //-                 hr.my-4
+                        //-                 .small.text-black-50
+                        //-                     a(href='https://github.com/cypherean') cypherean
+                        //-     .col-md-4.mb-3.mb-md-0
+                        //-         .card.py-4.h-100
+                        //-             .card-body.text-center
+                        //-                 i.fas.fa-envelope.text-primary.mb-2
+                        //-                 h4.text-uppercase.m-0 Email
+                        //-                 hr.my-4
+                        //-                 .small.text-black-50
+                        //-                     a(href='#!') cypherean@gmail.com
+                        //-     .col-md-4.mb-3.mb-md-0
+                        //-         .card.py-4.h-100
+                        //-             .card-body.text-center
+                        //-                 i.fas.fa-file.text-primary.mb-2
+                        //-                 h4.text-uppercase.m-0 Resume
+                        //-                 hr.my-4
+                        //-                 .small.text-black-50
+                        //-                     a(href='assets/docs/resume.pdf') Resume
+                    .col-lg-4
+                        .social.d-flex.flex-row-reverse
+                            a.mx-2(href='https://www.linkedin.com/in/cypherean/')
+                                i.fab.fa-linkedin
+                            a.mx-2(href='hhttps://twitter.com/cypherean')
+                                i.fab.fa-twitter
+                            a.mx-2(href='assets/docs/resume.pdf')
+                                i.fas.fa-file
+                            a.mx-2(href='mailto:cypherean@gmail.com')
+                                i.fas.fa-envelope
+                            a.mx-2(href='https://github.com/cypherean')
+                                i.fab.fa-github
+                            //- a.mx-2(href='https://gitter.im/shreyaa-sharmaa')
+                            //-     i.fab.fa-gitter
+                        //- .foot 
+                        //-     .text-white
+                        //-         | Shreya Sharma
 
-    // Footer
-    footer.footer.bg-black.small.text-center.text-white-50
-        .container
-            | Shreyaa Sharma
+    //- // Footer
+    //- footer.footer.bg-black.small.text-center.text-white-50
+    //-     .container
+    //-         | Shreyaa Sharma
+    //-         .social.d-flex.justify-content-center
+    //-                 a.mx-2(href='https://github.com/cypherean')
+    //-                     i.fab.fa-github
+    //-                 a.mx-2(href='mailto:cypherean@gmail.com')
+    //-                     i.fas.fa-envelope
+    //-                 a.mx-2(href='assets/docs/resume.pdf')
+    //-                     i.fas.fa-file
+    //-                 a.mx-2(href='https://www.linkedin.com/in/cypherean/')
+    //-                     i.fab.fa-linkedin
+    //-                 a.mx-2(href='https://twitter.com/cypherean')
+    //-                     i.fab.fa-twitter
+    //-                 a.mx-2(href='https://gitter.im/shreyaa-sharmaa')
+    //-                     i.fab.fa-gitter
     // Portfolio Modals
     // Modal 1
     #portfolioModal1.portfolio-modal.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
