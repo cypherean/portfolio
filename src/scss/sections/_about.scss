@@ -1,17 +1,23 @@
 .about-section {
-    padding: 5rem 0;
+    padding: 8rem 0;
     align-items: center;
     .about-me-pic {
         padding: 0rem 2rem;
         @include media-breakpoint-up(xl) {
-           height: 80vh;
+            height: 75vh;
+            padding-right: 10rem;
         }
-    }
-    .featured-text {
-        padding: 2rem;
         @include media-breakpoint-up(lg) {
             padding: 0 0 0 2rem;
             border-left: 0.5rem solid $primary;
+        }
+    }
+    .featured-text {
+        padding: 0rem 2rem;
+        @include media-breakpoint-up(xl) {
+            padding-left: 15rem;
+            padding-right: 5rem;
+            // margin-top: -5rem;
         }
     }
     .project-text {
@@ -24,6 +30,45 @@
                 border-width: 0.25rem;
                 width: 30%;
             }
+        }
+    }
+    .social {
+        margin-right: 0;
+        margin-top: 1.25rem;
+        a {
+            text-align: center;
+            // height: 3rem;
+            width: 1.7rem;
+            // background: $primary;
+            // border-radius: 100%;
+            // line-height: 3rem;
+            color: fade-out($black, 0.25);
+            &:hover {
+                color: fade-out($black, 0);
+            }
+            &:active {
+                color: $white;
+            }
+        }
+    }
+    .resume-button {
+        
+    }
+    .gray-btn {
+        margin-top: 1.25rem;
+        background-color: #f8f9fa;
+        color: $gray-700;
+        width: 10rem;
+        height: 3rem;
+        border-color: fade-out($black, 0.5);
+        border-width: 2px;
+        border-radius: 3px;
+        border-style: solid;
+        &:hover {
+            color: fade-out($black, 0);
+        }
+        &:active {
+            color: $white;
         }
     }
 }

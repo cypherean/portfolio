@@ -28,13 +28,16 @@
         margin-left: 0;
         margin-bottom: 1rem;
         display: flex;
-        flex-direction: row;
+        @include media-breakpoint-up(xl) {
+            flex-direction: row;
+        }
+        flex-direction: column;
         .project-links {
             width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-        }   
+        }
     }
     padding: 1.5rem 0;
     @include media-breakpoint-up(lg) {
@@ -49,13 +52,17 @@
         }
     }
     .app-img {
-        width: 500px;
+        align-self: center;
         height: auto;
+        width: 300px;
+        @include media-breakpoint-up(lg) {
+            width: 500px;
+        }
     }
     .project-text {
-        // padding: 2rem;
+        padding-top: 2rem;
         font-size: 100%;
-        @include media-breakpoint-up(lg) {
+        @include media-breakpoint-up(xl) {
             padding: 3rem;
             hr {
                 border-color: $primary;
@@ -63,5 +70,8 @@
                 width: 30%;
             }
         }
+    }
+    .ex-descrip {
+        line-height: 1.7rem;
     }
 }

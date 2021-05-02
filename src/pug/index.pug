@@ -34,8 +34,8 @@ html(lang='en')
                     i.fas.fa-bars
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ml-auto
-                        li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#about') About
+                        //- li.nav-item
+                        //-     a.nav-link.js-scroll-trigger(href='#about') About
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#projects') Projects
                         li.nav-item
@@ -43,62 +43,78 @@ html(lang='en')
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#contact') Contact
 
-        // Masthead
-        div.mastheadwrapper
-            header.masthead
-                .container.d-flex.h-100.align-items-center
-                    .px-md-5
-                        h1.text-white.mx-auto Hey,
-                        h1.mx-auto I'm Shreyaa.
-                        //- h2.text-white-50.mt-2.mb-5 Welcome to my Portfolio.
-                        // Social Tab 
-                        .container.social-tab
-                            a.mx-2(href='https://github.com/cypherean')
-                                i.fab.fa-github.fa-2x
-                            a.mx-2(href='mailto:cypherean@gmail.com') 
-                                i.fas.fa-envelope.fa-2x.
-                            a.mx-2(href='https://www.linkedin.com/in/shreyaa-sharma/') 
-                                i.fab.fa-linkedin.fa-2x
-                            a.mx-2(href='https://twitter.com/cypherean')
-                                i.fab.fa-twitter.fa-2x
-                            a.mx-2(href='https://gitter.im/shreyaa-sharmaa')
-                                i.fab.fa-gitter.fa-2x
-                            a.mx-2(href='assets/docs/resume.pdf')
-                                i.fas.fa-file.fa-2x
+        //- // Masthead
+        //- div.mastheadwrapper
+        //-     header.masthead
+        //-         .container.d-flex.h-100.align-items-center
+        //-             .px-md-5
+        //-                 h1.text-white.mx-auto Hey,
+        //-                 h1.mx-auto I'm Shreyaa.
+        //-                 //- h2.text-white-50.mt-2.mb-5 Welcome to my Portfolio.
+        //-                 // Social Tab 
+        //-                 .container.social-tab
+        //-                     a.mx-2(href='https://github.com/cypherean')
+        //-                         i.fab.fa-github.fa-2x
+        //-                     a.mx-2(href='mailto:cypherean@gmail.com') 
+        //-                         i.fas.fa-envelope.fa-2x.
+        //-                     a.mx-2(href='https://www.linkedin.com/in/shreyaa-sharma/') 
+        //-                         i.fab.fa-linkedin.fa-2x
+        //-                     a.mx-2(href='https://twitter.com/cypherean')
+        //-                         i.fab.fa-twitter.fa-2x
+        //-                     a.mx-2(href='https://gitter.im/shreyaa-sharmaa')
+        //-                         i.fab.fa-gitter.fa-2x
+        //-                     a.mx-2(href='assets/docs/resume.pdf')
+        //-                         i.fas.fa-file.fa-2x
 
         // About
-        section#about.about-section.text-center.bg-light
-            // Featured Project Row
-            .row.align-items-center.no-gutters.mb-4.mb-lg-5
-                .col-xl-6.col-lg-5
-                    img.about-me-pic.img-fluid.mb-3.mb-lg-0(src='assets/img/cypher1.jpeg' alt='...')
-                .col-xl-5.col-lg-6
-                    .featured-text.text-center.text-lg-left
-                        h2 About Me
-                        br
-                        p.text-black-50.mb-0
-                            | Hey, I'm Shreyaa! 
-                        br
-                        p.mb-0.text-black-50
-                            | I've been in love with coding ever since I discovered what a few lines of code could do.
-                            | I learnt about HTML, CSS and C++ in school and have been exploring the coding world ever 
-                            | since I stepped foot in College. 
-                        br
-                        p.mb-0.text-black-50
-                            | Fueled by high energy levels and boundless enthusiasm, I’m easily inspired and more then willing to follow
-                            | my fascinations wherever they take me. I’m passionate, expressive, multi-talented spirit with a natural 
-                            | ability to entertain and inspire. I’m never satisfied to just come up with ideas. Instead I have an almost 
-                            | impulsive need to act on them.
-                        br
-                        p.mb-0.text-black-50
-                            | I prefer to keep learning, continue challenging myself, and do interesting things that matter.
-                            | I’m a fast learner, able to pick up new skills and juggle different projects and 
-                            | roles with relative ease. 
-                        br
-                        p.mb-0.text-black-50
-                            | When not coding, you'll find me surfing the internet for Tech Blogs or neck deep in a thriller fiction. 
-                            | I often indulge in baking and trying my hand out at competitive programming.
-                        hr.d-none.d-lg-block.mb-0.ml-0
+        header#about.about-section.text-center.bg-light
+                // Featured Project Row
+                .row.align-items-center.no-gutters.mb-4.mb-lg-5
+                    .col-xl-6.col-lg-5
+                        .featured-text.text-center.text-lg-left
+                            h1 Hey, I'm Shreyaa!
+                            br
+                            //- p.text-black-50.mb-0
+                            //-     | Hey, I'm Shreyaa! 
+                            //- br
+                            p.mb-0.text-black-50
+                                | I've been in love with coding ever since I discovered what a few lines of code could do.
+                                | I learnt about HTML, CSS and C++ in school and have been exploring the coding world ever 
+                                | since I stepped foot in College. 
+                            //- br
+                            //- p.mb-0.text-black-50
+                            //-     | Fueled by high energy levels and boundless enthusiasm, I’m easily inspired and more then willing to follow
+                            //-     | my fascinations wherever they take me. I’m passionate, expressive, multi-talented spirit with a natural 
+                            //-     | ability to entertain and inspire. I’m never satisfied to just come up with ideas. Instead I have an almost 
+                            //-     | impulsive need to act on them.
+                            //- br
+                            //- p.mb-0.text-black-50
+                            //-     | I prefer to keep learning, continue challenging myself, and do interesting things that matter.
+                            //-     | I’m a fast learner, able to pick up new skills and juggle different projects and 
+                            //-     | roles with relative ease. 
+                            br
+                            p.mb-0.text-black-50
+                                | When not coding, you'll find me surfing the internet for Tech Blogs or neck deep in a thriller fiction. 
+                                | I often indulge in baking and trying my hand out at competitive programming.
+                            hr.d-none.d-lg-block.mb-0.ml-0
+                            .row.align-items-center.no-gutters.mb-4.mb-lg-5.d-flex.justify-content-between
+                                .social.d-flex.flex-row
+                                    a.mx-2(href='https://github.com/cypherean') 
+                                        i.fab.fa-github.fa-lg
+                                    a.mx-2(href='mailto:cypherean@gmail.com')
+                                        i.fas.fa-envelope.fa-lg
+                                    a.mx-2(href='https://www.linkedin.com/in/cypherean/')
+                                        i.fab.fa-linkedin.fa-lg
+                                    a.mx-2(href='https://twitter.com/cypherean')
+                                        i.fab.fa-twitter.fa-lg
+                                    //- a.mx-2(href='assets/docs/resume.pdf')
+                                        i.fas.fa-file.fa-lg
+                                .resume-button
+                                    a(href='assets/docs/shreyaa_sharma_resume.pdf')
+                                        button.gray-btn Resume
+                            
+                    .col-xl-5.col-lg-5
+                        img.about-me-pic.img-fluid.mb-3.mb-lg-0(src='assets/img/cypher1.jpeg' alt='...')
         //- // Carousel
         //- .container.align-items-center
         //- #carouselProjects.carousel.slide(data-ride='carousel')
@@ -407,7 +423,78 @@ html(lang='en')
                         //-                 | • Restricted the player’s accessible boundaries, creating main menu of the game, and
                         //-                 | adding image to the player sprite.
                         //-             hr.d-none.d-lg-block.mb-0.ml-0
-
+        
+        
+        //- // Experience
+        //- section#experience.projects-section.bg-light
+        //-     .container
+        //-         .col.justify-content-center.proj
+        //-             h1.text-black Experience 
+        //-                 hr.mb-0.ml-15
+        //-             // Project One Row
+        //-             .row.justify-content-center
+        //-                 .col-lg-12
+        //-                     .text-center.project
+        //-                         .project-text.w-100.my-auto.text-lg-left
+        //-                             h2.text-primary
+        //-                                 b SDSLabs
+        //-                             .row.d-flex.justify-content-between
+        //-                                 .col
+        //-                                     h4.text-black 
+        //-                                         b Member
+        //-                                 .col
+        //-                                     h5.text-black.text-right
+        //-                                         | Jan 2020-Present
+        //-                             h5.mb-0.text-black-50.ex-descrip
+        //-                                 | SDSLabs fosters technical activities in the campus. As part of the group, we develop
+        //-                                 | software to be used by general public, organize lectures, competitions and hackathons.
+        //-                                 | Under the hood of the group, I've worked on:
+        //-                                 ol 
+        //-                                     li 
+        //-                                         b Pinger: 
+        //-                                         | An open source uptime and status monitoring app with pluggable probes, storage backends 
+        //-                                         | and alerts. I developed the alert system for this project which sends alerts on slack, mail
+        //-                                         | and discord when the status of a test changes.
+        //-                                     li
+        //-                                         b Kiwi:
+        //-                                         | In memory key-value store written in Go. I worked on adding JSON compatibility to the 
+        //-                                         | project by adding the option to store data in JSON and use it from a JSON file in the
+        //-                                         | application.
+        //-                             hr.d-none.d-lg-block.mb-0.ml-0
+        //-                 .col-lg-12
+        //-                     .text-center.project
+        //-                         .project-text.w-100.my-auto.text-lg-left
+        //-                             h2.text-primary
+        //-                                 b Public Lab
+        //-                             .row.d-flex.justify-content-between
+        //-                                 .col
+        //-                                     h4.text-black 
+        //-                                         b Outreachy Intern
+        //-                                 .col
+        //-                                     h5.text-black.text-right
+        //-                                         | May-August 2020
+        //-                             h5.mb-0.text-black-50.ex-descrip
+        //-                                 | I worked on Fortification of Public Lab Editor along with three teammates,
+        //-                                 | and under the mentorship of Jeffrey Warren. We predominantly worked on revamping
+        //-                                 | and relaunching many parts of the Public Lab Website, in particular, the WYSIWYG
+        //-                                 | Editor and improving scalability, ease of contribution and maintenance of the projects.
+        //-                                 br
+        //-                                 | I successfully completed two major tasks and coordinated the succeeding release notes:
+        //-                                 br
+        //-                                 ol 
+        //-                                     li Integrating E2E test suite in the Editor project using Jest-Puppeteer.
+        //-                                     li Decoupling several nested libraries that had compatibility issues in the Woofmark library.
+        //-                             hr.d-none.d-lg-block.mb-0.ml-0
+                                    //- .project-link
+                                    //-     a(href='https://github.com/cypherean/CricLive')
+                                    //-         i.fab.fa-github.fa-lg
+                                    //-     a(href='https://devfolio.co/submissions/criclive')
+                                    //-         img.icon(src='assets/img/de.svg')
+                                        //- a.portfolio-link(data-toggle='modal' href='#portfolioModal3')
+                                        //-     | Read more
+                                        //-     i.fas.fa-angle-right.fa-lg
+                                //- img.d-block.app-img(src='assets/img/portfolio/criclive.png' alt='CricLive')
+                                
         // Timeline
         section#timeline.page-section.bg-light
             .container
@@ -603,9 +690,9 @@ html(lang='en')
                         .social.d-flex.flex-row-reverse
                             a.mx-2(href='https://www.linkedin.com/in/cypherean/')
                                 i.fab.fa-linkedin
-                            a.mx-2(href='hhttps://twitter.com/cypherean')
+                            a.mx-2(href='https://twitter.com/cypherean')
                                 i.fab.fa-twitter
-                            a.mx-2(href='assets/docs/resume.pdf')
+                            a.mx-2(href='assets/docs/shreyaa_sharma_resume.pdf')
                                 i.fas.fa-file
                             a.mx-2(href='mailto:cypherean@gmail.com')
                                 i.fas.fa-envelope
