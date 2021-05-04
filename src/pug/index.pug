@@ -39,6 +39,8 @@ html(lang='en')
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#projects') Projects
                         li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#experience') Experience
+                        li.nav-item
                             a.nav-link.js-scroll-trigger(href='#timeline') Achievements
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#contact') Contact
@@ -68,6 +70,7 @@ html(lang='en')
 
         // About
         header#about.about-section.text-center.bg-light
+            .container
                 // Featured Project Row
                 .row.align-items-center.no-gutters.mb-4.mb-lg-5
                     .col-xl-6.col-lg-5
@@ -113,8 +116,8 @@ html(lang='en')
                                     a(href='assets/docs/shreyaa_sharma_resume.pdf')
                                         button.gray-btn Resume
                             
-                    .col-xl-5.col-lg-5
-                        img.about-me-pic.img-fluid.mb-3.mb-lg-0(src='assets/img/cypher1.jpeg' alt='...')
+                    .col-xl-5.col-lg-5.float-xl-right
+                        img.about-me-pic.img-fluid(src='assets/img/cypher1.jpeg' alt='...')
         //- // Carousel
         //- .container.align-items-center
         //- #carouselProjects.carousel.slide(data-ride='carousel')
@@ -295,9 +298,9 @@ html(lang='en')
                                             i.fab.fa-github.fa-lg
                                         a(href='https://devfolio.co/submissions/criclive')
                                             img.icon(src='assets/img/de.svg')
-                                        //- a.portfolio-link(data-toggle='modal' href='#portfolioModal3')
-                                        //-     | Read more
-                                        //-     i.fas.fa-angle-right.fa-lg
+                                        a.portfolio-link(data-toggle='modal' href='#portfolioModal3')
+                                            | Read more
+                                            i.fas.fa-angle-right.fa-lg
                                 img.d-block.app-img(src='assets/img/portfolio/criclive.png' alt='CricLive')
                         .col-lg-12
                             .bg-white.text-center.project
@@ -425,66 +428,89 @@ html(lang='en')
                         //-             hr.d-none.d-lg-block.mb-0.ml-0
         
         
-        //- // Experience
-        //- section#experience.projects-section.bg-light
-        //-     .container
-        //-         .col.justify-content-center.proj
-        //-             h1.text-black Experience 
-        //-                 hr.mb-0.ml-15
-        //-             // Project One Row
-        //-             .row.justify-content-center
-        //-                 .col-lg-12
-        //-                     .text-center.project
-        //-                         .project-text.w-100.my-auto.text-lg-left
-        //-                             h2.text-primary
-        //-                                 b SDSLabs
-        //-                             .row.d-flex.justify-content-between
-        //-                                 .col
-        //-                                     h4.text-black 
-        //-                                         b Member
-        //-                                 .col
-        //-                                     h5.text-black.text-right
-        //-                                         | Jan 2020-Present
-        //-                             h5.mb-0.text-black-50.ex-descrip
-        //-                                 | SDSLabs fosters technical activities in the campus. As part of the group, we develop
-        //-                                 | software to be used by general public, organize lectures, competitions and hackathons.
-        //-                                 | Under the hood of the group, I've worked on:
-        //-                                 ol 
-        //-                                     li 
-        //-                                         b Pinger: 
-        //-                                         | An open source uptime and status monitoring app with pluggable probes, storage backends 
-        //-                                         | and alerts. I developed the alert system for this project which sends alerts on slack, mail
-        //-                                         | and discord when the status of a test changes.
-        //-                                     li
-        //-                                         b Kiwi:
-        //-                                         | In memory key-value store written in Go. I worked on adding JSON compatibility to the 
-        //-                                         | project by adding the option to store data in JSON and use it from a JSON file in the
-        //-                                         | application.
-        //-                             hr.d-none.d-lg-block.mb-0.ml-0
-        //-                 .col-lg-12
-        //-                     .text-center.project
-        //-                         .project-text.w-100.my-auto.text-lg-left
-        //-                             h2.text-primary
-        //-                                 b Public Lab
-        //-                             .row.d-flex.justify-content-between
-        //-                                 .col
-        //-                                     h4.text-black 
-        //-                                         b Outreachy Intern
-        //-                                 .col
-        //-                                     h5.text-black.text-right
-        //-                                         | May-August 2020
-        //-                             h5.mb-0.text-black-50.ex-descrip
-        //-                                 | I worked on Fortification of Public Lab Editor along with three teammates,
-        //-                                 | and under the mentorship of Jeffrey Warren. We predominantly worked on revamping
-        //-                                 | and relaunching many parts of the Public Lab Website, in particular, the WYSIWYG
-        //-                                 | Editor and improving scalability, ease of contribution and maintenance of the projects.
-        //-                                 br
-        //-                                 | I successfully completed two major tasks and coordinated the succeeding release notes:
-        //-                                 br
-        //-                                 ol 
-        //-                                     li Integrating E2E test suite in the Editor project using Jest-Puppeteer.
-        //-                                     li Decoupling several nested libraries that had compatibility issues in the Woofmark library.
-        //-                             hr.d-none.d-lg-block.mb-0.ml-0
+        // Experience
+        section#experience.projects-section.bg-black
+            .container
+                .col.justify-content-center.proj
+                    h1.text-white Experience 
+                        //- hr.mb-0.ml-15
+                    // Project One Row
+                    .row.justify-content-center
+                        .col-lg-12
+                            .text-center.ex
+                                .ex-text.w-100.my-auto.text-lg-left.bg-white
+                                    h2.text-primary
+                                        b SDSLabs
+                                    .row.d-flex.justify-content-between
+                                        .col
+                                            h4.text-black 
+                                                b Member
+                                        .col
+                                            h5.text-black.text-right
+                                                | Jan 2020-Present
+                                    h5.mb-0.text-black-50.ex-descrip
+                                        | SDSLabs fosters technical activities in the campus. As part of the group, we develop
+                                        | software to be used by general public, organize lectures, competitions and hackathons.
+                                        div#labs.collapse
+                                                | Under the hood of the group, I've worked on:
+                                                ol 
+                                                    li 
+                                                        b Pinger: 
+                                                        | An open source uptime and status monitoring app with pluggable probes, storage backends 
+                                                        | and alerts. I developed the alert system for this project which sends alerts on slack, mail
+                                                        | and discord when the status of a test changes.
+                                                    li
+                                                        b Kiwi:
+                                                        | In memory key-value store written in Go. I worked on adding JSON compatibility to the 
+                                                        | project by adding the option to store data in JSON and use it from a JSON file in the
+                                                        | application.
+                                    //- br
+                                    button.btn-expand(data-toggle="collapse" data-target="#labs")
+                                        | Read More...
+                                    hr.d-none.d-lg-block.mb-0.ml-0
+                                    .project-link
+                                        a.mx-2(href='https://github.com/sdslabs')
+                                            i.fab.fa-github.fa-lg
+                                        a.mx-2(href='https://www.facebook.com/SDSLabs')
+                                            i.fab.fa-facebook.fa-lg
+                                        a.mx-2(href='https://twitter.com/sdslabs')
+                                            i.fab.fa-twitter.fa-lg
+                                        a.mx-2(href='https://sdslabs.co/')
+                                            i.fas.fa-globe.fa-lg
+                        .col-lg-12
+                            .text-center.ex
+                                .ex-text.w-100.my-auto.text-lg-left.bg-white
+                                    h2.text-primary
+                                        b Public Lab
+                                    .row.d-flex.justify-content-between
+                                        .col
+                                            h4.text-black 
+                                                b Outreachy Intern
+                                        .col
+                                            h5.text-black.text-right
+                                                | May-August 2020
+                                    h5.mb-0.text-black-50.ex-descrip
+                                        | I worked on revamping
+                                        | and relaunching many parts of the Public Lab Website, in particular, the WYSIWYG
+                                        | Editor and improving scalability, ease of contribution and maintenance of the projects.
+                                        div#pl.collapse
+                                            br
+                                            | I successfully completed two major tasks and coordinated the succeeding release notes:
+                                            br
+                                            ol 
+                                                li Integrating E2E test suite in the Editor project using Jest-Puppeteer.
+                                                li Decoupling several nested libraries that had compatibility issues in the Woofmark library.
+                                    //- button.btn.btn-primary(data-dismiss='modal' type='button')
+                                    //-     i.fas.fa-times.mr-1
+                                    //-     | Close Project
+                                    button.btn-expand(data-toggle="collapse" data-target="#pl")
+                                        | Read More...
+                                    hr.d-none.d-lg-block.mb-0.ml-0
+                                    .project-link
+                                        a.mx-2(href='https://github.com/publiclab')
+                                            i.fab.fa-github.fa-lg
+                                        a.mx-2(href='https://publiclab.org/')
+                                            i.fas.fa-globe.fa-lg
                                     //- .project-link
                                     //-     a(href='https://github.com/cypherean/CricLive')
                                     //-         i.fab.fa-github.fa-lg
@@ -692,7 +718,7 @@ html(lang='en')
                                 i.fab.fa-linkedin
                             a.mx-2(href='https://twitter.com/cypherean')
                                 i.fab.fa-twitter
-                            a.mx-2(href='assets/docs/shreyaa_sharma_resume.pdf')
+                            a.mx-2(href='assets/docs/shreyaa_sharma_resume  .pdf')
                                 i.fas.fa-file
                             a.mx-2(href='mailto:cypherean@gmail.com')
                                 i.fas.fa-envelope
