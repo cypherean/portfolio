@@ -73,14 +73,14 @@ html(lang='en')
             .container
                 // Featured Project Row
                 .row.align-items-center.no-gutters.mb-4.mb-lg-5
-                    .col-xl-6.col-lg-5
+                    .col-xl-7.col-lg-5
                         .featured-text.text-center.text-lg-left
                             h1 Hey, I'm Shreyaa!
                             br
                             //- p.text-black-50.mb-0
                             //-     | Hey, I'm Shreyaa! 
                             //- br
-                            p.mb-0.text-black-50
+                            h5.mb-0.text-black-50
                                 | I've been in love with coding ever since I discovered what a few lines of code could do.
                                 | I learnt about HTML, CSS and C++ in school and have been exploring the coding world ever 
                                 | since I stepped foot in College. 
@@ -96,11 +96,11 @@ html(lang='en')
                             //-     | I’m a fast learner, able to pick up new skills and juggle different projects and 
                             //-     | roles with relative ease. 
                             br
-                            p.mb-0.text-black-50
+                            h5.mb-0.text-black-50
                                 | When not coding, you'll find me surfing the internet for Tech Blogs or neck deep in a thriller fiction. 
                                 | I often indulge in baking and trying my hand out at competitive programming.
                             hr.d-none.d-lg-block.mb-0.ml-0
-                            .row.align-items-center.no-gutters.mb-4.mb-lg-5.d-flex.justify-content-between
+                            .row.bar.align-items-center.no-gutters.mb-4.mb-lg-5.d-flex.justify-content-between
                                 .social.d-flex.flex-row
                                     a.mx-2(href='https://github.com/cypherean') 
                                         i.fab.fa-github.fa-lg
@@ -574,23 +574,23 @@ html(lang='en')
                     //-                 | SDSLabs organizes lectures and hackathons and participates in various technical competitions.
                     //-                 br 
                     //-                 | PAG aims to promote Competitive Programming in the campus.
+                    //- li
+                    //-     .timeline-image
+                    //-         img.rounded-circle.img-fluid(src='assets/img/about/5.jpg' alt='')
+                    //-     .timeline-panel
+                    //-         .text-right
+                    //-             h4 Outreachy
+                    //-             h4.subheading May-August 2020
+                    //-         .timeline-body
+                    //-             p.text-muted
+                    //-                 | Selected as an Outreachy intern and worked on fortification of
+                    //-                 b Public Lab Editor 
+                    //-                 | and improving scalability, ease of contribution and maintenance.  
                     li
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/5.jpg' alt='')
-                        .timeline-panel
-                            .text-right
-                                h4 Outreachy
-                                h4.subheading May-August 2020
-                            .timeline-body
-                                p.text-muted
-                                    | Selected as an Outreachy intern and worked on fortification of
-                                    b Public Lab Editor 
-                                    | and improving scalability, ease of contribution and maintenance.  
-                    li.timeline-inverted
                         .timeline-image
                             img.rounded-circle.img-fluid(src='assets/img/about/6.jpg' alt='')
                         .timeline-panel
-                            .text-left
+                            .text-right
                                 h4 HAB59 Hackathon
                                 h4.subheading August 2020
                             .timeline-body
@@ -600,11 +600,11 @@ html(lang='en')
                                     | in the Office Productivity Category in HAB59 Hackathon with our app 
                                     b ikai.
                                     | It can scan, edit and share multimedia to make remote collaboration easier.
-                    li
+                    li.timeline-inverted
                         .timeline-image
                             img.rounded-circle.img-fluid(src='assets/img/about/5.jpg' alt='')
                         .timeline-panel
-                            .text-right
+                            .text-left
                                 h4 Inout 7.0
                                 h4.subheading January 2021
                             .timeline-body
