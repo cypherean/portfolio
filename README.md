@@ -1,6 +1,6 @@
 # Portfolio
 
-A portfolio written using pug, scss and js.
+A jekyll portfolio
 
 ## Steps:
 1. Clone the repo and cd into it
