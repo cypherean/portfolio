@@ -11038,13 +11038,3 @@ body {
 .footer {
   padding: 5rem 0;
 }
-
-/* Intro vertical centering */
-html, body { height: 100%; }
-#page-top .cont { min-height: 100vh; display: flex; flex-direction: column; }
-#about { flex: 1 0 auto; display: flex; align-items: center; }
-
-#page-top {
-  background: #f8f9fa !important;
-  background-attachment: initial;
-}
