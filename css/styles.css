@@ -10227,7 +10227,7 @@ body {
   position: static;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background: linear-gradient(to bottom, black 0%, rgba(100, 161, 157, 0.8) 20%);
+  background: #f8f9fa;
 }
 #page-top .cont {
   background-color: #f8f9fa;
@@ -10265,6 +10265,23 @@ body {
 #page-top .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+html, body {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+#page-top .cont {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#about {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
 }
 
 #carouselProjects {
